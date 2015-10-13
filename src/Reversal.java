@@ -19,11 +19,22 @@ public class Reversal {
         String feed = "";
         
         //Read in data
-        try {
+        try { // 
             
             Scanner inp = new Scanner(input);
             while (inp.hasNext()) {
-                
+                temp = inp.nextLine();
+                String[] tokens = temp.split("\\s+");
+                // Create a string which has the words in reverse order
+                if (tokens.length > 0) {
+                    for (int i = tokens.length - 1; i > -1; i--) {
+                        feed = feed + tokens[i] + " ";
+                    }
+                }
+                feed = feed.trim();
+                lines.add(feed);
+                feed = "";
+                temp = "";                
 
             }
 
