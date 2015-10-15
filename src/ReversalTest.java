@@ -88,7 +88,7 @@ public class ReversalTest {
 
     @Test 
     public void testReversal1() {
-        //Send a non-existant input file
+        //Send a non-existent input file
         int actual=1;
         int expected=2;
         try {
@@ -104,7 +104,7 @@ public class ReversalTest {
     
     @Test
     public void testReversal2() {
-      //Send a non-existant output file
+      //Send a non-existent output file
         int actual=1;
         int expected=2;
         try {
@@ -141,8 +141,23 @@ public class ReversalTest {
     
     @Test
     public void testReversal4() {
-        //Send a file one line, one word
-        fail("Not yet implemented");
+        
+        try {
+            Reversal.reverseFile(inputTwo, outputTwo);
+            reader=new Scanner(outputOne);
+            String actual="";
+            if (reader.hasNext()){
+                actual=reader.nextLine();
+            }
+            String expected="Ted";
+            assertEquals("File was not empty", expected, actual);
+            assertFalse("File still has data", reader.hasNext());
+        }
+        catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+      
     }
     
     @Test
