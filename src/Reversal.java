@@ -4,6 +4,8 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// author Jacob Bechtel 00890504
+
 public class Reversal {
     
     public static void reverseFile(File input, File output)

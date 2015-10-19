@@ -10,6 +10,9 @@ import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 
+
+//author Jacob Bechtel 00890504
+
 public class ReversalTest {
     public static File inputOne;
     public static File inputTwo;
