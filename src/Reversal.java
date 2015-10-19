@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Reversal {
+    
     public static void reverseFile(File input, File output)
             throws FileNotFoundException {
         // Throw exception if either file is missing
@@ -36,7 +37,7 @@ public class Reversal {
         for (int i = (lines.size() - 1); i > -1; i--) {
             out.println(lines.get(i));
         }
-        
+
         // Done, so close the input and output
         out.close();
         inp.close();

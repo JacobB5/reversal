@@ -237,7 +237,11 @@ public class ReversalTest {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
     }
 
+    @Test
+    public void testConstructor(){
+     Reversal noNull=new Reversal();
+     assertNotNull("Consttructor was null", noNull);
+    }
 }
